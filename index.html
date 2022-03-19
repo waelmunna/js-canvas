@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cANVAS</title>
+  <style>
+    .textSp{
+      display: none;
+    }
+   .Show-more{
+     display: block;
+   }
+  </style>
+</head>
+<body>
+  
+  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quaerat atque labore sint, error esse eveniet. Recusandae, blanditiis voluptatum voluptas minima quasi autem libero omnis quaerat nihil eligendi consectetur, sapiente est culpa saepe eius nisi laborum! Consequuntur ab mollitia omnis expedita odit tempore nam 
+    <span id="textSp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis natus hic odit, deserunt officiis doloribus iure repellat consequatur ipsa. Labore sapiente voluptatem quaerat ad explicabo atque sit dolores temporibus, et ratione repudiandae tenetur deleniti est itaque molestiae nostrum consectetur dolore, veniam possimus eaque quas! Quibusdam odit eaque quia perferendis rerum.</span>voluptatibus odio, facere alias tempora necessitatibus?</p>
+  <button  class="btn">Learn More</button>
+
+  <canvas id="myCanvas" width="400px" height="300px"></canvas>
+
+  <script>
+    var btn=document.querySelector('btn');
+    var text=document.querySelector('text');
+    var textSPan=document.querySelector('.textSp');
+
+    btn.addEventListener('click',(e)=>{
+      text.classList.toggle('Show-more');
+    });
+
+  </script>
+
+</body>
+</html>
